@@ -65,12 +65,12 @@ class Calc {
 
   static #load = () => {
     this.#value =
-      window.localStorage.getItemt(this.#NAME) || ''
+      window.localStorage.getItem(this.#NAME) || ''
   }
 
   static init = () => {
     this.#load()
-    this.output()
+    this.#output()
     console.log('Calc is init')
   }
 }
